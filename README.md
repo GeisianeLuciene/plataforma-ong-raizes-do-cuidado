@@ -52,9 +52,9 @@ Este projeto pode ser visualizado ao vivo através do GitHub Pages.
 
 ## ✒️ Autor
 
-Projeto desenvolvido por **[GEISIANE LUCIENE SILVA OLIVEIRA FREITAS]**.
+Projeto desenvolvido por **Geisiane Luciene**.
 
--   **LinkedIn:** `[Geisiane Luciene](https://www.linkedin.com/in/geisiane-luciene-a51536379/)`
--   **Email:** `[lucienegeisiane9@gmail.com](lucienegeisiane9@gmail.com)`
+- **LinkedIn:** `[Geisiane Luciene](https://www.linkedin.com/in/geisiane-luciene-a51536379/)`
+- **Email:** `[lucienegeisiane9@gmail.com](mailto:lucienegeisiane9@gmail.com)`
 
 ---
