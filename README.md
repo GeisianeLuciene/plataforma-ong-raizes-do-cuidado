@@ -54,7 +54,7 @@ Este projeto pode ser visualizado ao vivo através do GitHub Pages.
 
 Projeto desenvolvido por **Geisiane Luciene**.
 
-- **LinkedIn:** `[Geisiane Luciene](https://www.linkedin.com/in/geisiane-luciene-a51536379/)`
-- **Email:** `[lucienegeisiane9@gmail.com](mailto:lucienegeisiane9@gmail.com)`
+- **LinkedIn:** [Geisiane Luciene](https://www.linkedin.com/in/geisiane-luciene-a51536379/)
+- **Email:** [lucienegeisiane9@gmail.com](mailto:lucienegeisiane9@gmail.com)
 
 ---
