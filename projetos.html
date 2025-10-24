@@ -4,36 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raízes do Cuidado - Nossos Projetos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Raízes do Cuidado</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Participe</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Raízes do Cuidado</h1>
+
+    <button class="menu-hamburguer" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav>
+        <ul class="menu-principal">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Participe</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
-        <section>
+        <section class="projetos-container">
             <h2>Nossos Projetos e Campanhas</h2>
             <p>Conheça as iniciativas que estão transformando nossa comunidade e veja como você pode fazer parte.</p>
 
-        <article>
+        <article class="card-projeto">
             <h3>Horta Terapêutica "Mente Fértil"</h3>
-            <img src="imagens/cultivar.jpg" alt="Mãos de uma pessoa plantando uma pequena muda verde na terra escura e fértil." width="400">
+            <picture>
+                <source srcset="imagens/cultivar.webp" type="image/webp">
+                <img src="imagens/cultivar.jpg" alt="Mãos de uma pessoa plantando uma pequena muda verde na terra escura e fértil.">
+    </picture>
             <p>Nossa horta não produz apenas alimentos orgânicos, mas também cultiva a paz interior. Participantes do projeto colocam a mão na terra, aprendem sobre o ciclo das plantas e praticam a atenção plena (mindfulness) através da jardinagem. É uma atividade comprovadamente eficaz para reduzir o estresse e a ansiedade.</p>
             <h4>Como ajudar:</h4>
             <p><strong>Voluntariado:</strong> Junte-se a nós no plantio, manutenção e colheita. Não precisa ter experiência, apenas vontade de ajudar. <a href="cadastro.html">Seja um voluntário!</a></p>
             <p><strong>Doações:</strong>Sua contribuição ajuda na compra de sementes, ferramentas e adubo orgânico. <a href="#">Doe agora!</a></p>
         </article>
 
-        <article>
+        <article class="card-projeto">
             <h3>Trilhas de Reconexão "Respire Fundo"</h3>
-            <img src="imagens/passeio.jpg" alt="Pés descalços de uma pessoa caminhando sobre pedras em uma trilha cercada de vegetação verde." width="400">
+            <picture>
+                <source srcset="imagens/passeio.webp" type="image/webp">
+                <img src="imagens/passeio.jpg" alt="Pés descalços de uma pessoa caminhando sobre pedras em uma trilha cercada de vegetação verde.">
+    </picture>
             <p>Organizamos caminhadas guiadas em parques e áreas de mata da região. Durante a trilha, promovemos pausas para exercícios de respiração, meditação e educação ambiental, ensinando sobre a fauna e a flora locais. É uma oportunidade de exercitar o corpo, acalmar a mente e se reconectar com o mundo natural.</p>
             <h4>Como ajudar:</h4>
             <p><strong>Voluntariado:</strong> Se você conhece a região ou tem experiência com guiamento, pode nos ajudar a liderar os grupos. <a href="cadastro.html">Participe!</a></p>
@@ -48,6 +65,8 @@
         <p>Entre em contato com: (XX) YYYYY-ZZZZ | email@ong.com</p>
         <p>&copy; 2025 Raízes do Cuidado. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>

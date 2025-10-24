@@ -1,0 +1,404 @@
+/* ==========================================================================
+   1. SISTEMA DE DESIGN (VARIÁVEIS)
+   ========================================================================== */
+:root {
+    /* -- Paleta de Cores -- */
+    --cor-primaria: #2a6f47;
+    --cor-primaria-clara: #4a936a;
+    --cor-secundaria: #a3b18a;
+    --cor-secundaria-clara: #dad7cd;
+    --cor-fundo: #fefae0;
+    --cor-texto: #344e41;
+    --cor-neutra-clara: #ffffff;
+    --cor-neutra-escura: #588157;
+
+    /* -- Tipografia (Tamanhos de Fonte) -- */
+    --fonte-xxg: 3.0rem;    /* 48px */
+    --fonte-xg:  2.25rem;   /* 36px */
+    --fonte-g:   1.5rem;    /* 24px */
+    --fonte-m:   1.125rem;  /* 18px */
+    --fonte-p:   1rem;      /* 16px */
+
+    /* -- Espaçamentos (Baseado em 8px) -- */
+    --espaco-pp: 8px;
+    --espaco-p:  16px;
+    --espaco-m:  24px;
+    --espaco-g:  32px;
+    --espaco-xg: 48px;
+    --espaco-xxg: 64px;
+}
+
+/* ==========================================================================
+   2. ESTILOS GLOBAIS E RESET
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    font-family: 'Poppins', sans-serif; /* CORREÇÃO: Faltava uma vírgula aqui */
+    font-size: var(--fonte-p);
+    line-height: 1.6;
+    
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+/* ==========================================================================
+   3. LAYOUT PRINCIPAL (HEADER, MAIN, FOOTER)
+   ========================================================================== */
+header,
+main,
+footer {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--espaco-m);
+}
+
+header,
+footer {
+    background-color: var(--cor-secundaria-clara);
+}
+
+/* ==========================================================================
+   4. COMPONENTES
+   ========================================================================== */
+
+/* --- 4.1 Cabeçalho e Navegação --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Lora', serif;
+    font-size: var(--fonte-g);
+    color: var(--cor-primaria);
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: var(--espaco-m);
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-weight: 600;
+    padding: var(--espaco-pp) var(--espaco-p);
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav a:hover {
+    color: var(--cor-neutra-clara);
+    background-color: var(--cor-primaria-clara);
+}
+
+/* --- 4.2 Botão Padrão --- */
+.btn {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-neutra-clara);
+    padding: var(--espaco-pp) var(--espaco-p);
+    border-radius: 4px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: var(--cor-primaria-clara);
+}
+
+/* ==========================================================================
+   5. ESTILOS ESPECÍFICOS DAS PÁGINAS
+   ========================================================================== */
+
+/* --- 5.1 Página Inicial (index.html) --- */
+.banner-principal {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: var(--espaco-xxg);
+}
+
+.info-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--espaco-xg);
+    align-items: center;
+    margin-bottom: var(--espaco-xg);
+}
+
+.info-imagem img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.info-texto h2 {
+    font-family: 'Lora', serif;
+    font-size: var(--fonte-xg);
+    color: var(--cor-primaria);
+    margin-bottom: var(--espaco-p);
+}
+
+.valores-lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--espaco-p);
+}
+
+.valores-lista li {
+    background-color: var(--cor-secundaria-clara);
+    padding: var(--espaco-pp) var(--espaco-m);
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+/* --- 5.2 Página de Projetos (projetos.html) --- */
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: var(--espaco-g);
+    padding-top: var(--espaco-g);
+}
+
+.card-projeto {
+    background-color: var(--cor-neutra-clara);
+    border: 1px solid var(--cor-secundaria-clara);
+    border-radius: 8px;
+    padding: var(--espaco-m);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-p);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.card-projeto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.card-projeto h3 {
+    font-family: 'Lora', serif;
+    font-size: var(--fonte-g);
+    color: var(--cor-primaria);
+}
+
+.card-projeto .btn {
+    margin-top: auto; /* Empurra o botão para o final do card */
+}
+
+/* --- 5.3 Página de Cadastro (cadastro.html) --- */
+.cadastro-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.cadastro-header h2 {
+    font-family: 'Lora', serif;
+    font-size: var(--fonte-xg);
+    color: var(--cor-primaria);
+    margin-bottom: var(--espaco-p);
+}
+
+.cadastro-header p {
+    font-size: var(--fonte-m);
+    color: var(--cor-neutra-escura);
+    margin-bottom: var(--espaco-g);
+}
+
+.cadastro-header img {
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: var(--espaco-xg);
+}
+
+form {
+    max-width: 700px;
+    margin: var(--espaco-g) auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-g);
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: var(--espaco-m);
+}
+
+legend {
+    font-family: 'Lora', serif;
+    font-size: var(--fonte-g);
+    color: var(--cor-primaria);
+    font-weight: 700;
+    padding-bottom: var(--espaco-p);
+    border-bottom: 2px solid var(--cor-secundaria-clara);
+    width: 100%;
+    margin-bottom: var(--espaco-p);
+}
+
+input,
+select {
+    width: 100%;
+    padding: var(--espaco-p);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--fonte-p);
+    color: var(--cor-texto);
+    background-color: var(--cor-neutra-clara);
+    border: 1px solid var(--cor-secundaria-clara);
+    border-radius: 4px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px hsla(142, 45%, 45%, 0.2);
+}
+
+form .btn {
+    border: none;
+    cursor: pointer;
+    font-size: var(--fonte-m);
+}
+
+/* --- Estilo para seções de texto centralizado --- */
+
+.bloco-texto {
+    display: block; /* Garante que o comportamento seja de bloco */
+    text-align: center;
+    max-width: 900px; /* Largura máxima para boa legibilidade */
+    margin: 0 auto var(--espaco-xg) auto; /* Centraliza na página */
+}
+
+/* Estiliza os títulos dentro desses blocos */
+.bloco-texto h2 {
+    font-family: 'Lora', serif;
+    font-size: var(--fonte-xg);
+    color: var(--cor-primaria);
+    margin-bottom: var(--espaco-p);
+}
+
+/* ==========================================================================
+   6. NAVEGAÇÃO RESPONSIVA (MOBILE-FIRST)
+   ========================================================================== */
+
+/* --- 6.1 O Ícone Hambúrguer --- */
+.menu-hamburguer {
+    display: flex; /* Usamos flex para alinhar os spans internos */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 32px;
+    height: 24px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* As 3 linhas do ícone */
+.menu-hamburguer span {
+    width: 100%;
+    height: 3px;
+    background-color: var(--cor-primaria);
+    border-radius: 2px;
+}
+
+/* --- 6.2 O Menu Escondido (Padrão Mobile) --- */
+.menu-principal {
+    /* Por padrão, o menu está escondido fora da tela */
+    position: fixed; /* Fica fixo na tela mesmo com rolagem */
+    top: 0;
+    right: 0;
+    width: 70%; /* Ocupa 70% da largura da tela */
+    max-width: 300px; /* Mas no máximo 300px */
+    height: 100vh; /* Ocupa 100% da altura da tela */
+    background-color: var(--cor-fundo);
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    
+    /* Esconde o menu para a direita */
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+
+    /* Reorganiza os itens do menu para uma lista vertical */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--espaco-xg);
+}
+
+/* --- 6.3 O Menu Visível (Quando aberto) --- */
+.menu-principal.nav-aberta {
+    /* Quando a classe .nav-aberta for adicionada, o menu desliza para dentro */
+    transform: translateX(0);
+}
+
+/* Estilo dos links dentro do menu mobile */
+.menu-principal a {
+    font-size: var(--fonte-g);
+}
+
+/* --- 6.4 Estilos para Telas Maiores (Tablet/Desktop) --- */
+
+/* Esta regra diz: aplique os estilos abaixo APENAS se a largura da tela
+   for de 768px OU MAIS. 768px é um ponto de quebra comum para tablets. */
+@media (min-width: 768px) {
+
+    /* 1. Escondemos o ícone de hambúrguer em telas grandes */
+    .menu-hamburguer {
+        display: none;
+    }
+
+    /* 2. Restauramos o menu principal para o visual de desktop */
+    .menu-principal {
+        position: static; /* Tira o menu do 'position: fixed' */
+        transform: translateX(0); /* Garante que ele esteja na posição original */
+        flex-direction: row; /* Alinha os itens na horizontal */
+        
+        /* Reseta os estilos do menu mobile */
+        width: auto;
+        height: auto;
+        background-color: transparent;
+        box-shadow: none;
+        
+        /* Restaura o espaçamento original do menu desktop */
+        gap: var(--espaco-m);
+    }
+
+    /* 3. Restaura o tamanho da fonte dos links para o padrão desktop */
+    .menu-principal a {
+        font-size: var(--fonte-p);
+    }
+}

@@ -4,24 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Participe - Raízes do Cuidado</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Raízes do Cuidado</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Participe</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Raízes do Cuidado</h1>
 
+    <button class="menu-hamburguer" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav>
+        <ul class="menu-principal">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Participe</a></li>
+        </ul>
+    </nav>
+</header>
     <main>
-        <h2>Seja um voluntário!</h2>
-        <p>Preencha o formulário abaixo para se cadastrar como voluntário em nossos projetos. Entraremos em contato em breve!</p>
-
-        <img src="imagens/uniao.jpg" alt="Várias mãos unidas em círculo, segurando uma pequena muda de planta sobre um fundo de grama verde." width="400">
+        
+        <div class="cadastro-header">
+            <h2>Seja um voluntário!</h2>
+            <p>Preencha o formulário abaixo para se cadastrar como voluntário em nossos projetos. Entraremos em contato em breve!</p>
+            <picture>
+                <source srcset="imagens/uniao.webp" type="image/webp">
+                <img src="imagens/uniao.jpg" alt="Várias mãos unidas em círculo, segurando uma pequena muda de planta sobre um fundo de grama verde.">
+    </picture>
+        </div>
 
         <form action="#" method="post">
             <fieldset>
@@ -80,7 +95,7 @@
                 </div>
             </fieldset>
 
-            <button type="submit">Quero ser voluntário!</button>
+            <button type="submit" class="btn">Quero ser voluntário!</button>
         </form>
     </main>
 
@@ -88,6 +103,8 @@
         <p>Entre em contato com: (XX) YYYYY-ZZZZ | email@ong.com</p>
         <p>&copy; 2025 Raízes do Cuidado. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>

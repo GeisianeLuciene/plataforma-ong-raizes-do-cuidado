@@ -4,40 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raízes do Cuidado - Página Inicial</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>Raízes do Cuidado</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="cadastro.html">Participe</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Raízes do Cuidado</h1>
+
+    <button class="menu-hamburguer" aria-label="Abrir Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <nav>
+        <ul class="menu-principal">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="cadastro.html">Participe</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main>
-        <img src="imagens/banner-principal.png" alt="Pessoas cuidando de uma horta em um ambiente natural, com o logo da Raízes do Cuidado e o slogan Cultivando mentes, florescendo futuros." style="width: 100%; height: auto; display: block; max-width: 1920px; margin: 0 auto;">
-        <section>
-            <h2>Sobre nós</h2>
-            <img src="imagens/arvore.jpg" alt="Pessoa com camisa marrom abraçando o tronco de uma árvore grande e texturizada." width="400">
-            <p>A 'Raízes do Cuidado' nasceu da percepção de que, na correria da vida moderna, muitas vezes nos desconectamos de duas coisas essenciais: de nós mesmos e da natureza. Vivemos em um ritmo que gera ansiedade e estresse, enquanto os espaços verdes ao nosso redor pedem por mais atenção. Foi dessa dupla necessidade que surgiu nossa missão: promover a saúde mental e o bem-estar emocional através da reconexão direta com o meio ambiente. Acreditamos que, ao cuidar da terra, plantar uma semente ou simplesmente caminhar em silêncio por uma trilha, estamos também cuidando de nossas próprias 'raízes' internas, encontrando equilíbrio e força.</p>
+        <picture class="banner-principal">
+            <source srcset="imagens/banner-fundo.webp" type="image/webp">
+            <img src="imagens/banner-fundo.jpg" alt="Pessoas praticando meditação e jardinagem em um ambiente natural">
+    </picture>
+        <section class="info-section">
+            <div class="info-imagem">
+                <picture>
+                    <source srcset="imagens/arvore.webp" type="image/webp">
+                    <img src="imagens/arvore.jpg" alt="Pessoa com   camisa marrom abraçando o tronco de uma árvore grande e texturizada.">
+    </picture>
+            </div>
+
+            <div class="info-texto">
+                <h2>Sobre nós</h2>
+                <p>A 'Raízes do Cuidado' nasceu da percepção de que, na correria da vida moderna, muitas vezes nos desconectamos de duas coisas essenciais: de nós mesmos e da natureza. Vivemos em um ritmo que gera ansiedade e estresse, enquanto os espaços verdes ao nosso redor pedem por mais atenção. Foi dessa dupla necessidade que surgiu nossa missão: promover a saúde mental e o bem-estar emocional através da reconexão direta com o meio ambiente. Acreditamos que, ao cuidar da terra, plantar uma semente ou simplesmente caminhar em silêncio por uma trilha, estamos também cuidando de nossas próprias 'raízes' internas, encontrando equilíbrio e força.</p>
+            </div>
         </section>
 
-         <section>
+         <section class="bloco-texto">
             <h2>Nossa Missão</h2>
             <p>Promover a saúde mental e o bem-estar na comunidade, oferecendo atividades terapêuticas gratuitas em contato com a natureza, como jardinagem, trilhas guiadas e meditação ao ar livre, enquanto trabalhamos ativamente na recuperação e preservação de áreas verdes locais.</p>
         </section>
         
-        <section>
+        <section class="bloco-texto">
             <h2>Nossa Visão</h2>
             <p>Ser uma referência na integração entre saúde mental e sustentabilidade, criando uma comunidade onde o cuidado com a natureza e o cuidado com as pessoas caminhem juntos, resultando em cidadãos mais saudáveis, conscientes e engajados.</p>
         </section>
 
-        <section>
+        <section class="bloco-texto">
             <h2>Nossos valores</h2>
-                <ul>
+                <ul class="valores-lista">
                     <li>Acolhimento: Criar um ambiente seguro e sem julgamentos para todos.</li>
                     <li>Sustentabilidade: Agir sempre com respeito e responsabilidade ambiental.</li>
                     <li>Conexão: Fortalecer os laços entre pessoas e o meio ambiente.</li>
@@ -51,6 +73,8 @@
         <p>Entre em contato com: (XX) YYYYY-ZZZZ | email@ong.com</p>
         <p>&copy; 2025 Raízes do Cuidado. Todos os direitos reservados.</p>
     </footer>
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>

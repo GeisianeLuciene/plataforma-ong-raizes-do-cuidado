@@ -1,54 +1,52 @@
-# Plataforma ONG "Raízes do Cuidado" - Entrega I
+# Plataforma ONG "Raízes do Cuidado"
 
-> Projeto acadêmico desenvolvido para a disciplina de Fundamentos da Web e Estruturação de Interfaces. Esta é a primeira entrega, focada na aplicação de HTML5 semântico para a estruturação de um site institucional.
+> Projeto acadêmico desenvolvido para a disciplina de Fundamentos da Web e Estruturação de Interfaces. O projeto consiste em um site institucional responsivo de 3 páginas, construído com HTML5, CSS3 e JavaScript.
 
-**Status:** Concluído (Entrega I) ✔️
+**Status:** Desenvolvimento (Entrega II Concluída) ✔️
 
 ---
 
 ## 📝 Descrição do Projeto
 
-Este projeto consiste na criação de uma plataforma web de três páginas para a ONG fictícia "Raízes do Cuidado". A organização tem como missão promover a saúde mental e o bem-estar através da reconexão das pessoas com a natureza. O site serve como um portal para apresentar a ONG, detalhar seus projetos e captar novos voluntários através de um formulário de cadastro.
+Este projeto consiste na criação de uma plataforma web para a ONG fictícia "Raízes do Cuidado", cuja missão é promover a saúde mental através da reconexão com a natureza. 
 
-## 🎯 Objetivos da Entrega
+Na **primeira fase**, a estrutura semântica do site foi construída utilizando HTML5. 
 
-Esta primeira fase do projeto foi focada em demonstrar domínio sobre os fundamentos da estruturação web, atendendo aos seguintes requisitos:
+Nesta **segunda fase**, a estrutura foi totalmente estilizada com CSS3, implementando um design system, componentes modernos e um layout responsivo (mobile-first) para garantir uma experiência de usuário agradável em qualquer dispositivo. A interatividade do menu mobile foi adicionada com JavaScript.
 
--   **Estrutura HTML5 Semântica:** Utilização correta de tags como `<header>`, `<main>`, `<footer>`, `<section>`, `<article>` e `<nav>`.
--   **Hierarquia de Títulos:** Aplicação lógica e consistente de títulos (`<h1>` a `<h4>`) para garantir a acessibilidade e a semântica do conteúdo.
--   **Formulários Complexos:** Criação de um formulário de cadastro com diversos tipos de `input` do HTML5, agrupamento lógico com `<fieldset>` e validação nativa.
--   **Uso de Mídia:** Inclusão de imagens otimizadas em todas as páginas para enriquecer o conteúdo.
--   **Código Válido:** Garantir que todos os arquivos HTML passem na validação oficial do W3C.
+## 🎯 Objetivos da Entrega I (Concluído)
 
-## 💻 Tecnologias Utilizadas
+-   Estruturação com HTML5 Semântico.
+-   Criação de formulário complexo com validação nativa.
+-   Uso de mídia e hierarquia de títulos.
 
--   **HTML5**
--   **Validador W3C** para garantia da qualidade do código.
+## 🎯 Objetivos da Entrega II (Concluído) -   **Desenvolver um Design System:** Definir paleta de cores, tipografia e espaçamentos com variáveis CSS.
+-   **Criar Leiautes Responsivos:** Utilizar CSS Grid para a estrutura principal e Flexbox para componentes.
+-   **Implementar Navegação Interativa:** Desenvolver um menu de navegação que se transforma em "hambúrguer" em dispositivos móveis.
+-   **Estilizar Componentes de Interface:** Construir cards, botões com estados (`:hover`) e formulários estilizados com feedback visual (`:focus`).
 
-## ✨ Features
+## 💻 Tecnologias Utilizadas -   **HTML5**
+-   **CSS3** (Variáveis, Grid, Flexbox, Media Queries)
+-   **JavaScript** (Vanilla JS para manipulação do DOM)
+-   **Google Fonts** para a tipografia.
 
--   **Página Inicial (`index.html`):** Apresentação da ONG, sua missão, visão e valores, com um banner principal.
--   **Página de Projetos (`projetos.html`):** Descrição detalhada de duas iniciativas principais da organização.
--   **Página de Cadastro (`cadastro.html`):** Formulário completo para inscrição de novos voluntários, com validação de campos nativa do navegador.
+## ✨ Features (Recursos) -   ✅ Design System completo com paleta de cores, tipografia e espaçamentos.
+-   ✅ Layout totalmente responsivo utilizando a abordagem **Mobile-First**.
+-   ✅ Estrutura principal da página construída com **CSS Grid**.
+-   ✅ **Menu de navegação interativo** com funcionalidade "hambúrguer" para dispositivos móveis, controlado via JavaScript.
+-   ✅ Componentes modernos como **Cards de projeto** com efeitos de `:hover`.
+-   ✅ **Formulário de cadastro** estilizado com feedback visual nos campos (`:focus`).
+-   ✅ Botões padronizados e reutilizáveis.
 
-## 🚀 Como Visualizar o Projeto
+## 🚀 Como Visualizar o Projeto 
 
-Existem duas maneiras de visualizar este projeto:
+O projeto pode ser visualizado ao vivo através do link do GitHub Pages:
 
-#### 1. Localmente
+-   **Link do Site:** **[https://geisianeluciene.github.io/plataforma-ong-raizes-do-cuidado/](https://geisianeluciene.github.io/plataforma-ong-raizes-do-cuidado/)**
 
+Também é possível visualizar localmente:
 1.  Faça o download do repositório (`Code` > `Download ZIP`).
-2.  Extraia a pasta em seu computador.
-3.  Abra o arquivo `index.html` em qualquer navegador web.
-
-#### 2. Online (via GitHub Pages) - Recomendado
-
-Este projeto pode ser visualizado ao vivo através do GitHub Pages.
-
-1.  Neste repositório, vá até a aba **"Settings"**.
-2.  No menu lateral esquerdo, clique em **"Pages"**.
-3.  Na seção "Branch", selecione a branch `main` e clique em **"Save"**.
-4.  Aguarde alguns minutos. O GitHub irá gerar um link público para o seu site (ex: `https://seunome.github.io/nome-do-repositorio/`).
+2.  Extraia a pasta e abra o arquivo `index.html` em seu navegador.
 
 ## ✒️ Autor
 
