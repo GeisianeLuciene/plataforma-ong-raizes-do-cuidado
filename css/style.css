@@ -402,3 +402,25 @@ form .btn {
         font-size: var(--fonte-p);
     }
 }
+
+
+/* --- Estilos para Validação de Formulário --- */
+
+/* Estilo para a mensagem de erro */
+.mensagem-erro {
+    color: #c9184a; /* Um tom de vermelho forte */
+    font-size: 0.875rem; /* Um pouco menor que o texto normal */
+    font-weight: 600;
+    display: none; /* A mensagem começa escondida */
+}
+
+/* Estilo para o input QUANDO ele tiver um erro */
+input.erro {
+    border-color: #c9184a;
+    background-color: #fff0f3;
+}
+
+/* Mostra a mensagem de erro quando o campo tem a classe 'erro' */
+input.erro + .mensagem-erro {
+    display: block;
+}
