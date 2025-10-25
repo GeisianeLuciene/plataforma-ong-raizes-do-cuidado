@@ -55,4 +55,18 @@ Este projeto consiste na criação de uma plataforma web para a ONG fictícia "R
 
 O projeto pode ser visualizado ao vivo através do link do GitHub Pages:
 
--   **Link do Site:** **
+-   **Link do Site:** **[https://geisianeluciene.github.io/plataforma-ong-raizes-do-cuidado/](https://geisianeluciene.github.io/plataforma-ong-raizes-do-cuidado/)**
+
+Para rodar localmente (necessário para a navegação SPA funcionar):
+1.  Clone ou baixe o repositório.
+2.  Instale a extensão **Live Server** no VS Code.
+3.  Clique com o botão direito no `index.html` e selecione "Open with Live Server".
+
+## ✒️ Autor
+
+Projeto desenvolvido por **Geisiane Luciene**.
+
+- **LinkedIn:** [Geisiane Luciene](https://www.linkedin.com/in/geisiane-luciene-a51536379/)
+- **Email:** [lucienegeisiane9@gmail.com](mailto:lucienegeisiane9@gmail.com)
+
+---
